@@ -1,0 +1,73 @@
+/* ====================== 
+   Travel Archives - Custom Styles
+   ====================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+    background: linear-gradient(135deg, #1e5c6b 0%, #2a8a9e 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Background */
+.hero-bg {
+    background: linear-gradient(135deg, #1e5c6b 0%, #2a8a9e 100%);
+}
+
+/* Map Container */
+.map-container {
+    filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.3));
+}
+
+/* Text Shadow for Title */
+.text-shadow {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Hover Effects */
+a[href="Login.php"] {
+    transition: all 0.3s ease;
+}
+
+a[href="Login.php"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 
+                0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+a[href="Register.php"] {
+    transition: all 0.3s ease;
+}
+
+a[href="Register.php"]:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .title-font {
+        font-size: 3.5rem;
+        line-height: 1.1;
+    }
+}
+
+@media (max-width: 640px) {
+    .title-font {
+        font-size: 2.8rem;
+    }
+    
+    .map-container svg {
+        max-width: 320px;
+        height: auto;
+    }
+}
